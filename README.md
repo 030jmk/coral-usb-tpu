@@ -15,6 +15,7 @@ Run the following commands to update your system and install essential build too
 
 ## Download and Extract Python 3.9 Source Code
 Python 3.9 is the latest version that will work with the dependencies. As of writing this, the latest security update is Python [3.9.21](https://docs.python.org/release/3.9.21/whatsnew/changelog.html)
+
     cd /usr/src
     sudo wget https://www.python.org/ftp/python/3.9.21/Python-3.9.21.tgz
     sudo tar xzf Python-3.9.21.tgz
