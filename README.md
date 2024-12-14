@@ -11,7 +11,8 @@ Flash latest Raspberry Pi OS image on an SD card
 ## Update System Packages
 Run the following commands to update your system and install essential build tools:
 
-    sudo apt update && sudo apt upgrade -y sudo apt install -y build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev tar wget cmake
+    sudo apt update && sudo apt upgrade -y sudo apt install -y build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev tar wget cmake libgirepository1.0-dev libcairo2-dev pkg-config python3-dev gir1.2-gtk-3.0
+
 
 ## Download and Extract Python 3.9 Source Code
 Python 3.9 is the latest version that will work with the dependencies. As of writing this, the latest security update is Python [3.9.21](https://docs.python.org/release/3.9.21/whatsnew/changelog.html)
@@ -52,6 +53,8 @@ Now connect the USB Accelerator to your computer using the provided USB 3.0 cabl
 
 ## Install [PyCoral](https://coral.ai/docs/accelerator/get-started/#pycoral-on-linux)
     pip install --extra-index-url https://google-coral.github.io/py-repo/ pycoral~=2.0
+    pip install PyGObject "numpy<2" scipy PyOpenGL
+
 
 ## Clone the [pycoral](https://github.com/google-coral/pycoral) Repository
 
@@ -69,3 +72,8 @@ Run the image classifier with the bird photo
     --model test_data/mobilenet_v2_1.0_224_inat_bird_quant_edgetpu.tflite \
     --labels test_data/inat_bird_labels.txt \
     --input test_data/parrot.jpg
+
+
+
+for later:
+https://github.com/feranick/pycoral
