@@ -11,7 +11,7 @@ Flash latest Raspberry Pi OS image on an SD card
 ## Update System Packages
 Run the following commands to update your system and install essential build tools:
 
-    sudo apt update && sudo apt upgrade -y sudo apt install -y build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev tar wget
+    sudo apt update && sudo apt upgrade -y sudo apt install -y build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev tar wget cmake
 
 ## Download and Extract Python 3.9 Source Code
 Python 3.9 is the latest version that will work with the dependencies. As of writing this, the latest security update is Python [3.9.21](https://docs.python.org/release/3.9.21/whatsnew/changelog.html)
