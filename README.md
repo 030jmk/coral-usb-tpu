@@ -74,6 +74,11 @@ Run the image classifier with the bird photo
     --input test_data/parrot.jpg
 
 
+pip uninstall numpy
+pip uninstall opencv-python
+pip install numpy==1.23.2
+pip install opencv-python-4.5.5
+
 
 for later:
 https://github.com/feranick/pycoral
